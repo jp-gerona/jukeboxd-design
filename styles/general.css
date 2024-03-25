@@ -1,0 +1,54 @@
+/* *Clash Display Font by Indian Type Foundry under the ITF license. */
+@import url('clash.css');
+
+:root{
+  --black: #000;
+  --white: #fff;
+  --background: #f9f5f1;
+
+  --primary: #af78fe;
+
+  --border-1: 1px solid;
+  --border-2: 2px solid;
+  --border-alpha: rgba(221, 221, 221, 0.5);
+}
+
+h1 {font-size: 3.053rem; font-weight: 700;}
+
+h2 {font-size: 2.442rem; font-weight: 600;}
+
+h3 {font-size: 1.954rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.250rem;}
+
+small {font-size: 0.800rem;}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+body{
+  font-size: 100%;
+  font-family: 'ClashDisplay-Regular', fallback, sans-serif;
+  letter-spacing: 0.05rem;
+  background-color: var(--background);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  list-style: none;
+}
+
+.btn{
+  cursor: pointer;
+  display: inline-block;
+}
