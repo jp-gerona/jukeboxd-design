@@ -73,20 +73,22 @@ body{
   width: 2px;
 }
 
+.topbar{
+  display: none;
+}
+
 /* *Main Content Styles */
-header, section, footer{
+main header, section, footer{
   margin-left: 15.625rem;
   padding: 2rem 4rem;
 }
 
-header{
+main header{
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--background);
   border-bottom: var(--border-2) var(--black);
-  position: sticky;
-  top: 0;
   z-index: 99;
 }
 
@@ -181,16 +183,46 @@ td.action{
   display: none; 
 }
 
-@media screen and (max-width: 1024px) {
-  header, section, footer{
-    padding: 2rem 1rem;
-  }
-
-  header h3{
+@media screen and (max-width: 1024px){
+  .sidebar{
     display: none;
   }
 
-  header .actions{
+  main header, section, footer{
+    margin-left: 0;
+    padding: 2rem 1rem;
+  }
+
+  main header h3{
+    display: none;
+  }
+
+  main header{
+    margin-top: 54px;
+  }
+
+  main header .actions{
     width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  .topbar{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    background-color: var(--black);
+    color: var(--white);
+    width: 100%;
+    z-index: 999;
+  }
+
+  .topbar h3{
+    font-weight: 400;
+    font-size: 100%;
   }
 }
