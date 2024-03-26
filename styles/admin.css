@@ -15,6 +15,7 @@ body{
   background-color: var(--black);
   color: var(--gray);
   overflow: hidden;
+  z-index: 999;
 }
 
 .sidebar .site-logo{
@@ -71,33 +72,6 @@ body{
 .sidebar .nav-links .nav-link.active::after{
   width: 2px;
 }
-  
-
-.btn{
-  background-color: var(--background);
-  padding: 0.75rem 1rem;
-  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
-  border: var(--border-2) var(--black);
-  border-radius: var(--border-radius);
-}
-
-.btn:disabled{
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
-.btn:not(:disabled):hover{
-  box-shadow: 0.25rem 0.25rem 0 var(--black);
-  transform: translate(-0.25rem, -0.25rem); 
-}
-
-.btn-accent{
-  background-color: var(--accent);
-}
-
-.btn-danger{
-  background-color: var(--danger);
-}
 
 /* *Main Content Styles */
 header, section, footer{
@@ -113,6 +87,7 @@ header{
   border-bottom: var(--border-2) var(--black);
   position: sticky;
   top: 0;
+  z-index: 99;
 }
 
 .actions{
@@ -194,4 +169,10 @@ td.amount{
 
 td.action{
   text-align: center;
+}
+
+#form_add_product .submit-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }

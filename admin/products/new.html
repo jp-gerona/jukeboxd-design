@@ -18,25 +18,66 @@
     </a>
     <div class="nav-links">
       <div>
-        <a href="./dashboard.html"><div class="nav-link"><i class="ri-dashboard-2-fill"></i>Dashboard</div></a>
-        <a href="./products.html"><div class="nav-link active"><i class="ri-store-2-fill"></i>Products</div></a>
-        <a href="./orders.html"><div class="nav-link"><i class="ri-money-dollar-circle-fill"></i>Orders</div></a>
-        <a href="./users.html"><div class="nav-link"><i class="ri-user-fill"></i>Users</div></a>
-        <a href="./analytics.html"><div class="nav-link"><i class="ri-bar-chart-fill"></i>Analytics</div></a>
+        <a href="../dashboard.html"><div class="nav-link"><i class="ri-dashboard-2-fill"></i>Dashboard</div></a>
+        <a href="../products.html"><div class="nav-link active"><i class="ri-store-2-fill"></i>Products</div></a>
+        <a href="../orders.html"><div class="nav-link"><i class="ri-money-dollar-circle-fill"></i>Orders</div></a>
+        <a href="../users.html"><div class="nav-link"><i class="ri-user-fill"></i>Users</div></a>
+        <a href="../analytics.html"><div class="nav-link"><i class="ri-bar-chart-fill"></i>Analytics</div></a>
       </div>     
-      <a href="../index.html"><div class="nav-link"><i class="ri-logout-box-line"></i>Logout</div></a>
+      <a href="../../index.html"><div class="nav-link"><i class="ri-logout-box-line"></i>Logout</div></a>
     </div>
   </nav>
 
   <main>
-    <header class="products-header">
+    <header>
       <h3>Add a new product</h3>
       <div class="actions">
         <a href="../products.html" class="btn asp-search-popover"><i class="ri-close-circle-line"></i>Cancel</a>
       </div>
     </header>
     <section class="new-product-section">
-      
+
+      <form id="form_add_product">
+
+        <fieldset class="text-field">
+          <legend><label for="record_name">Title</label></legend>
+          <input type="text" required placeholder="Name of vinyl record" id="record_name">
+        </fieldset>
+
+        <fieldset class="text-field">
+          <legend><label for="Genre">Genre</label></legend>
+          <select id="Genre">
+            <option>Choose genre of vinyl record</option>
+            <option>Disco</option>
+            <option>Hip-hop</option>
+            <option>Pop</option>
+            <option>RnB</option>
+            <option>Rock</option>
+            <option>Jazz</option>
+          </select>
+          <i class="ri-arrow-drop-down-line"></i>
+        </fieldset>
+
+        <fieldset class="text-field">
+          <legend><label for="Price">Price</label></legend>
+          <input type="text" required placeholder="Price of vinyl record (PHP)" id="Price">
+        </fieldset>
+
+        <fieldset class="text-field">
+          <legend><label for="Stock">Stock</label></legend>
+          <input type="text" required placeholder="Stock of vinyl record" id="Stock">
+        </fieldset>
+
+        <fieldset class="text-field">
+          <legend><label for="Description">Description</label></legend>
+          <textarea type="text" required placeholder="Detailed description of vinyl record, including the media condition, jacket condition and tracklist." id="Description"></textarea>
+        </fieldset>
+
+        <div class="submit-container">
+          <button type="submit" class="btn btn-accent" id="submit_add_product">Create Product</button>
+        </div>
+      </form>
+
     </section>
     <footer>
       <p>Copyright &copy; 2024 Orbit.</p>
