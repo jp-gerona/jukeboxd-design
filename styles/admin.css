@@ -76,7 +76,7 @@ body{
 /* *Main Content Styles */
 header, section, footer{
   margin-left: 15.625rem;
-  padding: 1rem 4rem;
+  padding: 2rem 4rem;
 }
 
 header{
@@ -179,4 +179,18 @@ td.action{
 
 #form_add_product .genre-select option[value=""][disabled]{
   display: none; 
+}
+
+@media screen and (max-width: 1024px) {
+  header, section, footer{
+    padding: 2rem 1rem;
+  }
+
+  header h3{
+    display: none;
+  }
+
+  header .actions{
+    width: 100%;
+  }
 }
