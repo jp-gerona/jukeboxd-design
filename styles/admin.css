@@ -131,13 +131,6 @@ header{
   align-items: center;
 }
 
-.pagination .asp-prev,
-.pagination .asp-next{
-  display: flex;
-  gap: 0.25rem;
-  align-items: center;
-}
-
 .pagination .asp-prev{
   flex-direction: row;
 }
@@ -153,12 +146,17 @@ footer{
 }
 
 /* *Table Styles */
+.table-container{
+  width: 100%;
+  overflow-x: auto;
+}
+
 table{
   width: 100%;
+  min-width: 950px;
   table-layout: auto;
   border-collapse: seperate;
   border-spacing: 0;
-  overflow: hidden;
   background-color: var(--white);
   border-top: var(--border-2) var(--black);
   border-left: var(--border-2) var(--black);
@@ -169,6 +167,7 @@ table{
 th, td{
   padding: 1rem;
   text-align: left;
+  white-space: nowrap;
 }
 
 th {

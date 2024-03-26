@@ -33,74 +33,76 @@
       <h3>Products</h3>
       <div class="actions">
         <button class="btn asp-search-popover"><i class="ri-search-line"></i></button>
-        <button class="btn btn-accent asp-add-product">New Product</button>
+        <a href="./products/new.html" class="btn btn-accent asp-add-product">New Product</a>
       </div>
     </header>
     <section class="products-section">
-      <table class="asp-records-table">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Artist</th>
-            <th>Genre</th>
-            <th>Stock</th>
-            <th>Price</th>
-            <th></th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>
-              <img src="../images/vinyls/thriller-michaeljackson.png">
-              Thriller
-            </td>
-            <td>Michael Jackson</td>
-            <td>Disco</td>
-            <td>23</td>
-            <td class="amount">&#8369; 2,499.00</td>
-            <td class="action"><button class="btn btn-danger asp-delete-button">Delete</button></td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>
-              <img src="../images/vinyls/bad-michaeljackson.png">
-              Bad
-            </td>
-            <td>Michael Jackson</td>
-            <td>Disco</td>
-            <td>12</td>
-            <td class=amount>&#8369; 1,999.00</td>
-            <td class="action"><button class="btn btn-danger asp-delete-button">Delete</button></td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>
-              <img src="../images/vinyls/streettalk-steveperry.jpeg">
-              Street Talk
-            </td>
-            <td>Steve Perry</td>
-            <td>Classic Rock</td>
-            <td>0</td>
-            <td class="amount">&#8369; 1,199.00</td>
-            <td class="action"><button class="btn btn-danger asp-delete-button">Delete</button></td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>
-              <img src="../images/vinyls/raise-earthwindfire.jpeg">
-              Raise!
-            </td>
-            <td>Earth, Wind & Fire</td>
-            <td>Disco</td>
-            <td>33</td>
-            <td class="amount">&#8369; 999.00</td>
-            <td class="action"><button class="btn btn-danger asp-delete-button">Delete</button></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-container">
+        <table class="asp-records-table">
+          <thead>
+            <tr>
+              <th>Prod. ID</th>
+              <th>Title</th>
+              <th>Artist</th>
+              <th>Genre</th>
+              <th>Stock</th>
+              <th>Price</th>
+              <th></th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <img src="../images/vinyls/thriller-michaeljackson.png">
+                Thriller
+              </td>
+              <td>Michael Jackson</td>
+              <td>Disco</td>
+              <td>23</td>
+              <td class="amount">&#8369; 2,499.00</td>
+              <td class="action"><button class="btn btn-danger asp-delete-button">Delete</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <img src="../images/vinyls/bad-michaeljackson.png">
+                Bad
+              </td>
+              <td>Michael Jackson</td>
+              <td>Disco</td>
+              <td>12</td>
+              <td class=amount>&#8369; 1,999.00</td>
+              <td class="action"><button class="btn btn-danger asp-delete-button">Delete</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <img src="../images/vinyls/streettalk-steveperry.jpeg">
+                Street Talk
+              </td>
+              <td>Steve Perry</td>
+              <td>Classic Rock</td>
+              <td>0</td>
+              <td class="amount">&#8369; 1,199.00</td>
+              <td class="action"><button class="btn btn-danger asp-delete-button">Delete</button></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                <img src="../images/vinyls/raise-earthwindfire.jpeg">
+                Raise!
+              </td>
+              <td>Earth, Wind & Fire</td>
+              <td>Disco</td>
+              <td>33</td>
+              <td class="amount">&#8369; 999.00</td>
+              <td class="action"><button class="btn btn-danger asp-delete-button">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class="pagination">
         <button disabled class="btn asp-prev"><i class="ri-arrow-left-s-line"></i>Prev</button>
