@@ -18,9 +18,9 @@
     </a>
     <div class="nav-links">
       <div>
-        <a href="./dashboard.html"><div class="nav-link active"><i class="ri-dashboard-2-fill"></i>Dashboard</div></a>
+        <a href="./dashboard.html"><div class="nav-link"><i class="ri-dashboard-2-fill"></i>Dashboard</div></a>
         <a href="./products.html"><div class="nav-link"><i class="ri-store-2-fill"></i>Products</div></a>
-        <a href="./orders.html"><div class="nav-link"><i class="ri-money-dollar-circle-fill"></i>Orders</div></a>
+        <a href="./orders.html"><div class="nav-link active"><i class="ri-money-dollar-circle-fill"></i>Orders</div></a>
         <a href="./users.html"><div class="nav-link"><i class="ri-user-fill"></i>Users</div></a>
         <a href="./analytics.html"><div class="nav-link"><i class="ri-bar-chart-fill"></i>Analytics</div></a>
       </div>     
@@ -29,12 +29,43 @@
   </nav>
 
   <main>
-    <header class="dashboard-header">
-      <h3>Dashboard</h3>
+    <header class="sales-header">
+      <h3>Orders</h3>
+      <div class="actions">
+        <button class="btn asp-search-popover"><i class="ri-search-line"></i></button>
+      </div>
     </header>
+    <section class="products-section">
+      <table class="asp-records-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Product</th>
+            <th>Acct. ID</th>
+            <th>Qty.</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
 
-    <section class="dashboard-section">
-      <h1>Welcome back!</h1>
+        <tbody>
+          <tr>
+            <td>March 26, 2024</td>
+            <td>
+              <img src="../images/vinyls/thriller-michaeljackson.png">
+              Thriller
+            </td>
+            <td>C00000001</td>
+            <td>2</td>
+            <td class="amount">&#8369; 4998.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="pagination">
+        <button disabled class="btn asp-prev"><i class="ri-arrow-left-s-line"></i>Prev</button>
+        <span class="asp-page-info">Page 1 of 1</span>
+        <button disabled class="btn asp-next"><i class="ri-arrow-right-s-line"></i>Next</button>
+      </div>
     </section>
 
     <footer>

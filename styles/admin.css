@@ -81,7 +81,12 @@ body{
   border-radius: var(--border-radius);
 }
 
-.btn:hover{
+.btn:disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn:not(:disabled):hover{
   box-shadow: 0.25rem 0.25rem 0 var(--black);
   transform: translate(-0.25rem, -0.25rem); 
 }
@@ -184,6 +189,10 @@ td img{
   vertical-align: middle;
 }
 
-td:last-child{
+td.amount{
+  font-weight: 550;
+}
+
+td.action{
   text-align: center;
 }

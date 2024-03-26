@@ -18,10 +18,10 @@
     </a>
     <div class="nav-links">
       <div>
-        <a href="./dashboard.html"><div class="nav-link active"><i class="ri-dashboard-2-fill"></i>Dashboard</div></a>
+        <a href="./dashboard.html"><div class="nav-link"><i class="ri-dashboard-2-fill"></i>Dashboard</div></a>
         <a href="./products.html"><div class="nav-link"><i class="ri-store-2-fill"></i>Products</div></a>
         <a href="./orders.html"><div class="nav-link"><i class="ri-money-dollar-circle-fill"></i>Orders</div></a>
-        <a href="./users.html"><div class="nav-link"><i class="ri-user-fill"></i>Users</div></a>
+        <a href="./users.html"><div class="nav-link active"><i class="ri-user-fill"></i>Users</div></a>
         <a href="./analytics.html"><div class="nav-link"><i class="ri-bar-chart-fill"></i>Analytics</div></a>
       </div>     
       <a href="../index.html"><div class="nav-link"><i class="ri-logout-box-line"></i>Logout</div></a>
@@ -29,12 +29,38 @@
   </nav>
 
   <main>
-    <header class="dashboard-header">
-      <h3>Dashboard</h3>
+    <header class="users-header">
+      <h3>Users</h3>
+      <div class="actions">
+        <button class="btn asp-search-popover"><i class="ri-search-line"></i></button>
+      </div>
     </header>
+    <section class="products-section">
+      <table class="asp-records-table">
+        <thead>
+          <tr>
+            <th>Acct. ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Address</th>
+          </tr>
+        </thead>
 
-    <section class="dashboard-section">
-      <h1>Welcome back!</h1>
+        <tbody>
+          <tr>
+            <td>C00000001</td>
+            <td>Lebron_James</td>
+            <td>lebronjames@gmail.com</td>
+            <td>Los Angeles, CA</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="pagination">
+        <button disabled class="btn asp-prev"><i class="ri-arrow-left-s-line"></i>Prev</button>
+        <span class="asp-page-info">Page 1 of 1</span>
+        <button disabled class="btn asp-next"><i class="ri-arrow-right-s-line"></i>Next</button>
+      </div>
     </section>
 
     <footer>

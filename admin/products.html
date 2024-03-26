@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jukeboxd</title>
 
+  <link rel="preload" href="../fonts/clash-display/WEB/fonts/ClashDisplay-Variable.woff2" as="font" type="font/woff2" crossorigin>
+
   <link rel="stylesheet" href="../styles/general.css">
   <link rel="stylesheet" href="../styles/admin.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
@@ -17,10 +19,10 @@
     <div class="nav-links">
       <div>
         <a href="./dashboard.html"><div class="nav-link"><i class="ri-dashboard-2-fill"></i>Dashboard</div></a>
-        <a href="#"><div class="nav-link active"><i class="ri-store-2-fill"></i>Products</div></a>
-        <a href="./sales.html"></a><div class="nav-link"><i class="ri-money-dollar-circle-fill"></i>Sales</div>
-        <a href="./users.html"></a><div class="nav-link"><i class="ri-user-fill"></i>Users</div>
-        <a href="./analytics.html"></a><div class="nav-link"><i class="ri-bar-chart-fill"></i>Analytics</div>
+        <a href="./products.html"><div class="nav-link active"><i class="ri-store-2-fill"></i>Products</div></a>
+        <a href="./orders.html"><div class="nav-link"><i class="ri-money-dollar-circle-fill"></i>Orders</div></a>
+        <a href="./users.html"><div class="nav-link"><i class="ri-user-fill"></i>Users</div></a>
+        <a href="./analytics.html"><div class="nav-link"><i class="ri-bar-chart-fill"></i>Analytics</div></a>
       </div>     
       <a href="../index.html"><div class="nav-link"><i class="ri-logout-box-line"></i>Logout</div></a>
     </div>
@@ -58,8 +60,8 @@
             <td>Michael Jackson</td>
             <td>Disco</td>
             <td>23</td>
-            <td>&#8369; 2,499.00</td>
-            <td><button class="btn btn-danger asp-delete-button">Delete</button></td>
+            <td class="amount">&#8369; 2,499.00</td>
+            <td class="action"><button class="btn btn-danger asp-delete-button">Delete</button></td>
           </tr>
           <tr>
             <td>2</td>
@@ -70,8 +72,8 @@
             <td>Michael Jackson</td>
             <td>Disco</td>
             <td>12</td>
-            <td>&#8369; 1,999.00</td>
-            <td><button class="btn btn-danger asp-delete-button">Delete</button></td>
+            <td class=amount>&#8369; 1,999.00</td>
+            <td class="action"><button class="btn btn-danger asp-delete-button">Delete</button></td>
           </tr>
           <tr>
             <td>3</td>
@@ -82,8 +84,8 @@
             <td>Steve Perry</td>
             <td>Classic Rock</td>
             <td>0</td>
-            <td>&#8369; 1,199.00</td>
-            <td><button class="btn btn-danger asp-delete-button">Delete</button></td>
+            <td class="amount">&#8369; 1,199.00</td>
+            <td class="action"><button class="btn btn-danger asp-delete-button">Delete</button></td>
           </tr>
           <tr>
             <td>4</td>
@@ -92,16 +94,16 @@
               Raise!
             </td>
             <td>Earth, Wind & Fire</td>
-            <td>Clas</td>
+            <td>Disco</td>
             <td>33</td>
-            <td>&#8369; 999.00</td>
-            <td><button class="btn btn-danger asp-delete-button">Delete</button></td>
+            <td class="amount">&#8369; 999.00</td>
+            <td class="action"><button class="btn btn-danger asp-delete-button">Delete</button></td>
           </tr>
         </tbody>
       </table>
 
       <div class="pagination">
-        <button class="btn asp-prev"><i class="ri-arrow-left-s-line"></i>Prev</button>
+        <button disabled class="btn asp-prev"><i class="ri-arrow-left-s-line"></i>Prev</button>
         <span class="asp-page-info">Page 1 of 10</span>
         <button class="btn asp-next"><i class="ri-arrow-right-s-line"></i>Next</button>
       </div>
