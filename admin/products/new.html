@@ -39,15 +39,15 @@
 
       <form id="form_add_product">
 
-        <fieldset class="text-field">
+        <fieldset >
           <legend><label for="record_name">Title</label></legend>
           <input type="text" required placeholder="Name of vinyl record" id="record_name">
         </fieldset>
 
-        <fieldset class="text-field">
+        <fieldset class="genre-select">
           <legend><label for="Genre">Genre</label></legend>
           <select id="Genre">
-            <option>Choose genre of vinyl record</option>
+            <option value="" disabled selected>Choose genre of vinyl record</option>
             <option value="Disco">Disco</option>
             <option value="Hip-hop">Hip-hop</option>
             <option value="Pop">Pop</option>
@@ -58,17 +58,17 @@
           <i class="ri-arrow-drop-down-line"></i>
         </fieldset>
 
-        <fieldset class="text-field">
+        <fieldset>
           <legend><label for="Price">Price</label></legend>
           <input type="text" required placeholder="Price of vinyl record (PHP)" id="Price">
         </fieldset>
 
-        <fieldset class="text-field">
+        <fieldset>
           <legend><label for="Stock">Stock</label></legend>
           <input type="text" required placeholder="Stock of vinyl record" id="Stock">
         </fieldset>
 
-        <fieldset class="text-field">
+        <fieldset>
           <legend><label for="Description">Description</label></legend>
           <textarea type="text" required placeholder="Detailed description of vinyl record, including the media condition, jacket condition and tracklist." id="Description"></textarea>
         </fieldset>
