@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -114,10 +114,17 @@
     </section>
     <footer>
       <p>Copyright &copy; 2024 Orbit.</p>
-      <button class="btn btn-accent light-dark-toggle"><i class="ri-sun-fill"></i></button>
+      <button class="btn btn-accent"
+        type="button"
+        data-theme-toggle
+        aria-label="Change to light theme"
+        id="theme">
+        <i class="ri-sun-fill"></i>
+      </button>
     </footer>
   </main>
   
   <script src="../../scripts/admin.js"></script>
+  <script src="../../scripts/theme.js"></script>
 </body>
 </html>
