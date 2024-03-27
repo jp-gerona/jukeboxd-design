@@ -237,4 +237,57 @@ td.action{
     width: 100%;
     height: 100%;
   }
+
+  .topbar .ham-icon{
+    cursor: pointer;
+  }
+
+  .topbar .ham-icon:hover{
+    color: var(--accent);
+  }
+
+  .topbar .ham-icon:active{
+    color: var(--accent);
+  }
+
+  .topbar .nav-links{
+    position: absolute; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--black);
+    
+    top: 4.1rem;
+    left:0
+  }
+
+  .topbar .nav-links {
+    display: none;
+  }
+  
+  .topbar .nav-links.open {
+    display: flex;
+  }
+
+  .topbar .nav-link{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    column-gap: 0.8rem;
+    gap: 0.8rem;
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
+    cursor: pointer;
+    border-top: var(--border-1) var(--white);
+  }
+
+  .topbar .nav-link:hover{
+    color: var(--accent);
+    background-color: var(--gray-hover); 
+  }
+  
+  .topbar .nav-link.active{
+    color: var(--accent);
+    background-color: var(--gray-hover);
+  }
 }
