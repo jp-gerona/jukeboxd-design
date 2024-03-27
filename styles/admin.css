@@ -220,7 +220,7 @@ td.action{
     top: 0;
     left: 0;
     background-color: var(--black);
-    color: var(--white);
+    color: var(--gray);
     width: 100%;
     z-index: 999;
   }

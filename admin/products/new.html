@@ -52,9 +52,19 @@
 
       <form id="form_add_product">
 
-        <fieldset >
+        <fieldset>
           <legend><label for="record_name">Title</label></legend>
           <input type="text" required placeholder="Name of vinyl record" id="record_name">
+        </fieldset>
+
+        <fieldset>
+          <legend><label for="Artist">Artist</label></legend>
+          <input type="text" required placeholder="Artist of vinyl record" id="Artist">
+        </fieldset>
+
+        <fieldset>
+          <legend><label for="imageUpload">Upload image of Vinyl Record</label></legend>
+          <input class="image-upload" type="file" id="imageUpload" name="imageUpload" accept="image/*">
         </fieldset>
 
         <fieldset class="genre-select">
