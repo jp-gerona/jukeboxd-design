@@ -1,19 +1,22 @@
 /* *CUSTOMER LOGIN */
 /* --------------------------------------------------------------------------------------------------- */
-#main-login{
+#main-login,
+#main-signup{
   display: flex;
   justify-content: space-between;
   width: 100%;
   min-height: 100vh;
 }
 
-.login-container{
+.login-container,
+.signup-container{
   border-right: var(--border-2) var(--black);
   flex-basis: 40%;
   padding: 2rem 4rem;
 }
 
-.login-container header{
+.login-container header,
+.signup-container header{
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -22,33 +25,43 @@
   white-space: nowrap;
 }
 
-.login-container header .site-logo{
+.login-container header .site-logo,
+.signup-container header .site-logo{
   width: 16rem;
 }
 
-.login-container header .site-logo img{
+.login-container header .site-logo img,
+.signup-container header .site-logo img{
   width: 100%;
   object-fit: cover;
 }
 
-.login-container h1{
+.login-container h2,
+.signup-container h2{
   margin-bottom: 2rem;
 }
 
-.login-container .submit-container button{
+.login-container .submit-container button,
+.signup-container .submit-container button{
   width: 100%;
 }
 
-#customer-login-form{
+#customer-login-form,
+#customer-signup-form{
   margin-bottom: 4rem;
 }
 
-.background-container{
+.login-background-container,
+.signup-background-container{
   flex-basis: 60%;
   min-height: 100vh;
   background-image: url('../images/logo/Jukeboxd-background1.svg');
   background-size: cover;
   background-position: center;
+}
+
+.signup-background-container{
+  background-image: url('../images/logo/Jukeboxd-background2.svg');
 }
 
 @media screen and (max-width: 1024px){
