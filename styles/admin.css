@@ -337,8 +337,6 @@ td.action{
   margin-bottom: 2rem;
 }
 
-
-
 @media screen and (max-width: 600px){
   .admin-login-container{
     width: 90%;
