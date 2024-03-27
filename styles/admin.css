@@ -323,7 +323,7 @@ td.action{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25rem;
+  width: 30rem;
   cursor: pointer;
   margin-bottom: 3rem;
 }
@@ -337,8 +337,12 @@ td.action{
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 512px){
   .admin-login-container{
     width: 90%;
+  }
+
+  #main-login .site-logo{
+    width: 25rem;
   }
 }

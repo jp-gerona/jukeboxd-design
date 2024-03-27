@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/logo/Jukeboxd-favicon.png" type="image/x-icon">
   <title>Jukeboxd</title>
 
   <link rel="preload" href="../fonts/clash-display/WEB/fonts/ClashDisplay-Variable.woff2" as="font" type="font/woff2" crossorigin>
@@ -13,24 +14,27 @@
 </head>
 <body>
   <main id="main-login">
-    <div class="site-logo">
+    <a class="site-logo" href="../customer/index.html">
       <img src="../images/logo/Jukeboxd-full.svg" alt="Site Logo">
-    </div>
+    </a>
     <div class="admin-login-container flex-center">
-      <a class="link" href="../index.html"><i class="ri-arrow-left-line"></i>Go back</a>
+      <a class="link" href="../customer/index.html"><i class="ri-arrow-left-line"></i>Go back</a>
 
       <form id="admin-login-form">
         <fieldset>
           <legend><label for="email">Email</label></legend>
-          <input type="text" required id="email">
+          <input type="text" autocomplete="email" required id="email">
         </fieldset>
+
         <fieldset>
           <legend><label for="password">Password</label></legend>
           <input type="password" required id="password">
         </fieldset>
+
         <div class="submit-container">
           <button type="submit" class="btn btn-primary">Login</button>
         </div>
+        
       </form>
     </div>
   </main>
