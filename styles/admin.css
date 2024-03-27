@@ -1,3 +1,5 @@
+/* *ADMIN DASHBOARD */
+/* --------------------------------------------------------------------------------------------------- */
 body{
   overflow-x: hidden;
 }
@@ -289,5 +291,56 @@ td.action{
   .topbar .nav-link.active{
     color: var(--accent);
     background-color: var(--gray-hover);
+  }
+}
+
+/* *ADMIN LOGIN */
+/* --------------------------------------------------------------------------------------------------- */
+#main-login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.admin-login-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--white);
+  border: var(--border-2) var(--black);
+  border-radius: var(--border-radius);
+  width: 30rem;
+  padding: 2rem 4rem;
+}
+
+#admin-login-form{
+  width: 100%;
+}
+
+#main-login .site-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+#main-login .site-logo img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.link{
+  margin-bottom: 2rem;
+}
+
+
+
+@media screen and (max-width: 600px){
+  .admin-login-container{
+    width: 90%;
   }
 }

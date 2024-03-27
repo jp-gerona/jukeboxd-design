@@ -12,7 +12,28 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
-   
+  <main id="main-login">
+    <div class="site-logo">
+      <img src="../images/logo/Jukeboxd-full.svg" alt="Site Logo">
+    </div>
+    <div class="admin-login-container flex-center">
+      <a class="link" href="../index.html"><i class="ri-arrow-left-line"></i>Go back</a>
+
+      <form id="admin-login-form">
+        <fieldset>
+          <legend><label for="email">Email</label></legend>
+          <input type="text" required id="email">
+        </fieldset>
+        <fieldset>
+          <legend><label for="password">Password</label></legend>
+          <input type="password" required id="password">
+        </fieldset>
+        <div class="submit-container">
+          <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+      </form>
+    </div>
+  </main>
   <script src="../scripts/admin.js"></script>
 </body>
 </html>

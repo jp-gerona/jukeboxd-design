@@ -181,3 +181,11 @@ fieldset .image-upload{
   background-color: var(--white);
 }
 
+link{
+  color: var(--black);
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
+}
+
+.link:hover{
+  color: var(--accent);
+}
