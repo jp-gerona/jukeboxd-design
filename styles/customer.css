@@ -65,24 +65,28 @@
 }
 
 @media screen and (max-width: 1024px){
-  #main-login{
+  #main-login,
+  #main-signup{
     flex-direction: column;
   }
 
-  .login-container{
+  .login-container,
+  .signup-container{
     flex-basis: 100%;
     border-right: none;
     border-bottom: var(--border-2) var(--black);
   }
 
-  .background-container{
+  .login-background-container,
+  .signup-background-container{
     flex-basis: 100%;
     min-height: 50vh;
   }
 }
 
 @media screen and (max-width: 512px){
-  .login-container{
+  .login-container,
+  .signup-container{
     padding: 1rem 2rem;
   }
 }

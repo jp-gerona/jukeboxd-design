@@ -94,7 +94,7 @@ main header{
   justify-content: space-between;
   align-items: center;
   background-color: var(--background);
-  border-bottom: var(--border-2) var(--black);
+  border-bottom: var(--border-2) var(--filled);
   z-index: 99;
 }
 
