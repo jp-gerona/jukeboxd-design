@@ -336,6 +336,10 @@ section{
   }
 }
 @media screen and (max-width: 768px){
+  #main-store{
+    margin-top: 8.571rem;
+  }
+  
   .nav-bar-squished{
     display: flex;
     justify-content: center;
@@ -356,7 +360,6 @@ section{
     gap: 0.8rem;
     width: 100%;
   }
-
 }
 
 @media screen and (max-width: 512px){
