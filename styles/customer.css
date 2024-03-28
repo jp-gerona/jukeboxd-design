@@ -152,6 +152,14 @@ nav .customer-links{
   white-space: nowrap;
 }
 
+.signup-container #logo2{
+  display: none;
+}
+
+.login-container #logo2{
+  display: none;
+}
+
 /* *SECTIONS */
 /* --------------------------------------------------------------------------------------------------- */
 #main-store{
