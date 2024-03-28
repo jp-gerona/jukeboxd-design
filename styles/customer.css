@@ -165,6 +165,8 @@ section{
   flex-direction: column;
 }
 
+/* *HOMEPAGE */
+/* --------------------------------------------------------------------------------------------------- */
 .banner{
   border-bottom: var(--border-2) var(--filled);
   position: relative;
@@ -376,6 +378,132 @@ section{
     padding: 0.8rem;
   }
 }
+
+/* *RECORD DETAILS */
+/* --------------------------------------------------------------------------------------------------- */
+.record-full-details{
+  display: grid;
+  grid-template-columns: 2fr 320px;
+  padding: 2rem 4rem;
+  gap: 1rem;
+  margin-bottom: 8rem;
+}
+
+.record-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--container);
+  border: var(--border-2) var(--filled);
+  border-radius: var(--border-radius);
+}
+
+.record-info .cover-container{
+  width: 300px;
+  height: 300px;
+  margin: 1rem 2rem;
+  border: 2px solid var(--filled);
+}
+
+.record-info img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.record-info h2{
+  padding: 0 2rem;
+}
+
+.record-info h3,
+.record-info .genre{
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+
+.record-info .genre{
+  padding-bottom: 1rem;
+  border-bottom: var(--border-2) var(--filled);
+}
+
+.record-info .description{
+  padding: 1rem 2rem;
+  line-height: 1.5;
+}
+
+.record-price{
+  position: sticky;
+  top: 7rem;
+  width: 100%;
+  background-color: var(--container);
+  border: var(--border-2) var(--filled);
+  border-radius: var(--border-radius);
+}
+
+.record-price .price{
+  font-weight: 450;
+}
+
+.record-price .price-container {
+  background-color: var(--accent);
+  color: var(--black);
+	display: inline-block;
+  width: auto;
+	height: 38px;
+	line-height: 38px;
+  padding: 0 0.625rem 0 0.625rem;
+  border: 2px solid var(--filled);
+}
+
+.add-to-cart-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.add-to-cart-form .price-label{
+  display: flex;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-bottom: var(--border-2) var(--filled);
+}
+
+.add-to-cart-form .price-label h4{
+  margin-bottom: 1rem;
+}
+
+.add-to-cart-form select{
+  align-self: center;
+  margin: 1rem 2rem;
+  width: 80%;
+}
+
+.add-to-cart-form button{
+  border: var(--border-2) var(--filled);
+  align-self: center;
+  margin: 1rem 2rem;
+  width: 80%;
+}
+
+.add-to-cart-form button:disabled{
+  background-color: var(--success);
+  color: var(--black);
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px){
+  .record-full-details{
+    grid-template-columns: 1fr;
+    padding: 2rem 4rem;
+  }
+  .add-to-cart-form select,
+  .add-to-cart-form button{
+    width: 90%;
+  }
+}
+
 
 /* *MARQUEE */
 /* --------------------------------------------------------------------------------------------------- */
