@@ -267,6 +267,10 @@ section{
   transform: translate(-0.40rem, -0.40rem); 
 }
 
+.about{
+  border-top: var(--border-2) var(--filled);
+}
+
 .about .about-container {
   width: 100%;
   display: flex;
@@ -339,7 +343,7 @@ section{
   #main-store{
     margin-top: 8.571rem;
   }
-  
+
   .nav-bar-squished{
     display: flex;
     justify-content: center;
