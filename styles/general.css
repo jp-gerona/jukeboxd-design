@@ -43,7 +43,7 @@ h3 {font-size: 1.954rem; font-weight: 550;}
 
 h4 {font-size: 1.563rem; font-weight: 500;}
 
-h5 {font-size: 1.250rem;}
+h5 {font-size: 1.250rem; font-weight: 500;}
 
 small {font-size: 0.800rem;}
 
@@ -113,6 +113,18 @@ i{
   background-color: var(--black);
   border: 2px solid var(--black);
   color: var(--white); 
+}
+
+.btn-secondary{
+  background-color: var(--filled);
+  border: 2px solid var(--filled);
+  color: var(--white);
+}
+
+.btn-secondary:hover{
+  background-color: var(--accent);
+  border: 2px solid var(--filled);
+  color: var(--black);
 }
 
 .btn-primary:hover{
@@ -211,6 +223,11 @@ a.link{
   color: var(--filled);
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
   text-decoration: underline;
+}
+
+.link{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .link:hover{

@@ -49,8 +49,98 @@
     </div>
   </nav>
 
-  <main id="main-store">
-    <section class="record-full-details">
+  <main class="main-checkout" id="main-store">
+    <header>
+      <h2>Checkout</h2>
+      <a class="btn btn-accent" href="./home.html">Continue shopping</a>
+    </header>
+
+    <section class="checkout">
+      <div class="cart-summary">
+
+        <div class="records-summary">
+
+          <!-- Example of 1 record inside cart sumarry-->
+            <div class="record-container">
+              <div class="cover-container">
+                <img src="../images/vinyls/thriller-michaeljackson.png" alt="Album Picture">
+              </div>
+              <div class="record-details">
+                <div class="record-header">
+                  <div class="record-title-artist">
+                    <h4>Thriller</h4>
+                    <p>Michael Jackson</p>
+                  </div>
+                  <div class="record-summary-price">&#8369; 2,499.00</div>
+                </div>
+                <div class="record-footer">
+                  <p>Qty:<span id="qty">1</span></p>
+                  <p class="link" id="remove">Remove</p>
+                </div>
+              </div>
+            </div>
+
+          <!-- Other examples to fill -->
+          <div class="record-container">
+            <div class="cover-container">
+              <img src="../images/vinyls/thriller-michaeljackson.png" alt="Album Picture">
+            </div>
+            <div class="record-details">
+              <div class="record-header">
+                <div class="record-title-artist">
+                  <h4>Thriller</h4>
+                  <p>Michael Jackson</p>
+                </div>
+                <div class="record-summary-price">&#8369; 2,499.00</div>
+              </div>
+              <div class="record-footer">
+                <p>Qty:<span id="qty">1</span></p>
+                <p class="link" id="remove">Remove</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="record-container">
+            <div class="cover-container">
+              <img src="../images/vinyls/thriller-michaeljackson.png" alt="Album Picture">
+            </div>
+            <div class="record-details">
+              <div class="record-header">
+                <div class="record-title-artist">
+                  <h4>Thriller</h4>
+                  <p>Michael Jackson</p>
+                </div>
+                <div class="record-summary-price">&#8369; 2,499.00</div>
+              </div>
+              <div class="record-footer">
+                <p>Qty:<span id="qty">1</span></p>
+                <p class="link" id="remove">Remove</p>
+              </div>
+            </div>
+          </div>
+          <!--  End of examples -->
+        </div>
+
+        <div class="summary-total">
+          <h4>Total:</h4>
+          <h4>&#8369; <span>7,497.00</span></h4>
+        </div>
+      </div>
+
+      <div class="billing-address">
+        <h4>Address</h4>
+        <form id="checkout-form">
+          <fieldset>
+            <legend><label for="address">Shipping Address</label></legend>
+            <input type="address" required autocomplete="street-address" id="address">
+          </fieldset>
+
+          <div class="submit-container">
+            <button type="submit" class="btn btn-secondary">Check out</button>
+          </div>
+        </form>
+      </div>
+
     </section>
 
 
