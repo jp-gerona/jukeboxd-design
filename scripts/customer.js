@@ -39,9 +39,12 @@ window.addEventListener('load', updateLogos);
 const addToCartForm = document.querySelector('.add-to-cart-form');
 const addToCartButton = addToCartForm.querySelector('button[type="submit"]');
 
-addToCartButton.disabled = true;
-addToCartButton.textContent = 'Added to Cart';
-setTimeout(() => {
-  addToCartButton.disabled = false;
-  addToCartButton.textContent = 'Add to Cart';
-}, 2000);
+addToCartButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  addToCartButton.disabled = true;
+  addToCartButton.textContent = 'Added to Cart';
+  setTimeout(() => {
+    addToCartButton.disabled = false;
+    addToCartButton.textContent = 'Add to Cart';
+  }, 2000);
+});
