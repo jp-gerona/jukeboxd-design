@@ -157,9 +157,9 @@ legend label{
   font-weight: 450;
 }
 
-fieldset input,
-fieldset textarea,
-fieldset select{
+input,
+textarea,
+select{
   padding: 0.75rem 1rem;
   background-color: var(--container);
   color: var(--filled);
@@ -167,15 +167,15 @@ fieldset select{
   border-radius: var(--border-radius);
 }
 
-fieldset input::placeholder,
-fieldset textarea::placeholder,
-fieldset select::placeholder{
+input::placeholder,
+textarea::placeholder,
+select::placeholder{
   color: var(--placeholder);
 }
 
-fieldset input:focus,
-fieldset textarea:focus,
-fieldset select:focus{
+input:focus,
+textarea:focus,
+select:focus{
   border-color: var(--accent);
   outline: var(--border-1) var(--accent);
 }
