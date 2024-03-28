@@ -10,7 +10,7 @@
 
 .login-container,
 .signup-container{
-  border-right: var(--border-2) var(--black);
+  border-right: var(--border-2) var(--filled);
   flex-basis: 40%;
   padding: 2rem 4rem;
 }
@@ -74,7 +74,7 @@
   .signup-container{
     flex-basis: 100%;
     border-right: none;
-    border-bottom: var(--border-2) var(--black);
+    border-bottom: var(--border-2) var(--filled);
   }
 
   .login-background-container,
